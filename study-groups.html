@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner - Find Your Study Group</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f3e5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            color: #6a4c93;
+            margin-bottom: 2rem;
+        }
+
+        .description {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .study-button {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+            color: white;
+        }
+
+        .discord-btn {
+            background-color: #b39ddb;
+        }
+
+        .youtube-btn {
+            background-color: #ce93d8;
+        }
+
+        .study-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .benefits {
+            margin-top: 3rem;
+            padding: 2rem;
+            background-color: #e1bee7;
+            border-radius: 15px;
+            color: #4a4a4a;
+        }
+
+        .benefits h2 {
+            color: #6a4c93;
+            margin-bottom: 1rem;
+        }
+
+        .benefits ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .benefits li {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .benefits li::before {
+            content: "★";
+            position: absolute;
+            left: 0;
+            color: #6a4c93;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Find Your Perfect Study Group</h1>
+        
+        <div class="description">
+            <p>Ready to enhance your learning experience? Join our vibrant community of students and make studying more engaging and effective! Choose your preferred platform below to connect with fellow learners.</p>
+        </div>
+
+        <div class="button-container">
+            <a href="https://discord.gg/PFQCSefY" target="_blank" class="study-button discord-btn">
+                Join Discord Study Group
+            </a>
+            <a href="https://www.youtube.com/watch?si=GbeiLORTH51p2JLW&v=oHVwbNkU3yQ&feature=youtu.be" target="_blank" class="study-button youtube-btn">
+                Join YouTube Session
+            </a>
+        </div>
+
+        <div class="benefits">
+            <h2>Benefits of Group Study</h2>
+            <ul>
+                <li>Share knowledge and learn from different perspectives</li>
+                <li>Stay motivated with peer support</li>
+                <li>Practice explaining concepts to others</li>
+                <li>Build a network of like-minded students</li>
+                <li>Access to live help and discussions</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scrolling for better user experience
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
