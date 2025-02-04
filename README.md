@@ -1,4 +1,4 @@
-# Project Name:Study Planner 
+# Project Name:StudyFlow 
 ## Basic Details
 A Website that helps you to study!
 
