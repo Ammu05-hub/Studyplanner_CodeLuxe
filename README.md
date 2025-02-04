@@ -1,4 +1,4 @@
-# Project Name:Stusy Planner 
+# Project Name:Study Planner 
 ## Basic Details
 A Website that helps you to study!
 
